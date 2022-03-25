@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Edit ticket</title>
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+        <script src="scripts/require.js"></script>
+        <script src="src/config.js"></script>
+    </head>
+    <body>
+        <h1 class="text-xl font-semibold ml-20">Edit tickets</h1>
+        <div class="content md:flex md:items-center mb-6">
+            <form id="register-form" class="w-full max-w-sm ml-20">
+                <div>
+                    <label for="title" class="text-l text-black-300 mb-10 font-semibold">Title</label>
+                    <input type="text" id="title" class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500">
+                </div>
+                <div>
+                    <label for="description" class="text-l text-black-300 mb-10 font-semibold">Description</label>
+                    <input type="text" id="description" class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500">
+                </div>
+                <div>
+                    <label for="assigned" class="text-l text-black-300 mb-10 font-semibold">Asigned</label>
+                    <select id="assigned" class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500">
+                        <option value="manager">Manager</option>
+                        <option value="developer">Developer</option>
+                        <option value="designer">Designer</option>
+                        <option value="qa">QA</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="status" class="text-l text-black-300 mb-10 font-semibold">Status</label>
+                    <select id="status" class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500">
+                        <option value="todo">To do</option>
+                        <option value="backlog">Backlog</option>
+                        <option value="codereview">QA</option>
+                        <option value="development">Development</option>
+                    </select>
+                </div>
+                <a href="index.html" id="save" class="text-s text-blue-300 font-bold mb-10">Save</a>
+                <a href="index.html" id="delete" class="text-s text-red-300 font-bold mb-10">Delete</a>
+            </form>
+        </div>
+    </body>
+</html>
